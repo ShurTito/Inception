@@ -1,0 +1,13 @@
+server {
+    listen 80;  # Escuchar en el puerto 80
+    server_name antferna.42.fr;  # Cambia esto por tu dominio o IP
+
+    root /var/www/html;  # Ruta donde se encuentra tu index-static.html
+    index index.static.html;  # Archivo que se servirá por defecto
+
+    location / {
+        try_files $uri $uri/ =404;  # Manejo de errores 404
+    }
+
+    # Opcional: puedes agregar más configuraciones aquí
+}
