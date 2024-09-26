@@ -3,7 +3,7 @@ data_dir = ~/data
 mariadb_dir = $(data_dir)/mariadb
 wordpress_dir = $(data_dir)/wordpress
 docker_compose_file = ~/srcs/docker-compose.yml
-env_file = ~/srcs/.env
+env_file = ~/.env
 
 define create_dirs
 	@mkdir -p $(data_dir) $(mariadb_dir) $(wordpress_dir)
