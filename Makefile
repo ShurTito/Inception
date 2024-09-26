@@ -2,7 +2,7 @@ name = Inception
 data_dir = ~/data
 mariadb_dir = $(data_dir)/mariadb
 wordpress_dir = $(data_dir)/wordpress
-docker_compose_file = ~/srcs/docker-compose.yml
+docker_compose_file = ./srcs/docker-compose.yml
 env_file = ~/.env
 
 define create_dirs
