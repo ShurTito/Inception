@@ -31,7 +31,7 @@ re: down
 clean: down
 	@echo "Cleaning ${name}..."
 	@docker system prune -a -f
-	@chmod -R 777 $(data_dir)
+	@sudo chmod -R 777 $(data_dir)
 	@sudo rm -rf $(wordpress_dir)/* $(mariadb_dir)/*
 
 fclean:
