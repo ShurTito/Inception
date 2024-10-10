@@ -29,7 +29,7 @@ wp core install --allow-root --url=${DOMAIN_NAME} --title="Inception" \
    --admin_user=${WP_ADMIN} --admin_password=${WP_ADMIN_PASS} \
    --admin_email="admin@example.com" --skip-email --path=/var/www/html/wordpress
 
-wp user create --allow-root ${WP_USER} --skip-email --user_pass=${WP_USER_PASS} \
+wp user create --allow-root ${WP_USER} antferna@42.com --user_pass=${WP_USER_PASS} \
    --path=/var/www/html/wordpress --url=${DOMAIN_NAME}
 
 wp theme install twentytwenty --activate --allow-root --path=/var/www/html/wordpress
